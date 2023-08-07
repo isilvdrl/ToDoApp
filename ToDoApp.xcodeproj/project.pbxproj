@@ -19,6 +19,7 @@
 		E889A3232A794EAF00D324E6 /* KayitEkle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E889A3222A794EAF00D324E6 /* KayitEkle.swift */; };
 		E889A3252A794EE700D324E6 /* KayitDuzenle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E889A3242A794EE700D324E6 /* KayitDuzenle.swift */; };
 		E889A3272A79547300D324E6 /* Kayitlar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E889A3262A79547300D324E6 /* Kayitlar.swift */; };
+		E8ADFFFC2A802EC200A5DACE /* KayitlarHucre.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ADFFFB2A802EC200A5DACE /* KayitlarHucre.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		E889A3222A794EAF00D324E6 /* KayitEkle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KayitEkle.swift; sourceTree = "<group>"; };
 		E889A3242A794EE700D324E6 /* KayitDuzenle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KayitDuzenle.swift; sourceTree = "<group>"; };
 		E889A3262A79547300D324E6 /* Kayitlar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kayitlar.swift; sourceTree = "<group>"; };
+		E8ADFFFB2A802EC200A5DACE /* KayitlarHucre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KayitlarHucre.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 		E889A31E2A794B3800D324E6 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				E8ADFFFA2A802E6B00A5DACE /* tableview */,
 				E889A3202A794BD600D324E6 /* views */,
 			);
 			path = ui;
@@ -166,6 +169,14 @@
 				E889A3262A79547300D324E6 /* Kayitlar.swift */,
 			);
 			path = entity;
+			sourceTree = "<group>";
+		};
+		E8ADFFFA2A802E6B00A5DACE /* tableview */ = {
+			isa = PBXGroup;
+			children = (
+				E8ADFFFB2A802EC200A5DACE /* KayitlarHucre.swift */,
+			);
+			path = tableview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,6 +315,7 @@
 				E889A3272A79547300D324E6 /* Kayitlar.swift in Sources */,
 				E889A3232A794EAF00D324E6 /* KayitEkle.swift in Sources */,
 				E889A2EF2A794B1A00D324E6 /* AppDelegate.swift in Sources */,
+				E8ADFFFC2A802EC200A5DACE /* KayitlarHucre.swift in Sources */,
 				E889A2F12A794B1A00D324E6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

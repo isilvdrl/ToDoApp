@@ -16,22 +16,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ji-QT-BNG">
-                                <rect key="frame" x="152.66666666666666" y="407.66666666666669" width="88" height="37"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="DETAY">
-                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
-                                </buttonConfiguration>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="5Pw-Nt-TNK">
+                                <rect key="frame" x="0.0" y="155" width="393" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="buttonDetail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pIH-nA-0zO"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="dVF-OT-Ab5"/>
                                 </connections>
-                            </button>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="sNp-VS-Nid">
+                                <rect key="frame" x="0.0" y="211" width="393" height="607"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="kayitlarHucre" id="tGT-2V-olq" customClass="KayitlarHucre" customModule="ToDoApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tGT-2V-olq" id="dLD-WJ-jdG">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Aaa-8Z-dn5">
+                                                    <rect key="frame" x="16" y="35" width="59" height="30"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qK-yV-d2N">
+                                                            <rect key="frame" x="0.0" y="0.0" width="59" height="30"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Aaa-8Z-dn5" firstAttribute="centerY" secondItem="dLD-WJ-jdG" secondAttribute="centerY" id="RW2-T9-eMU"/>
+                                                <constraint firstItem="Aaa-8Z-dn5" firstAttribute="leading" secondItem="dLD-WJ-jdG" secondAttribute="leading" constant="16" id="q86-Ao-pFE"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="labelKayitIcerik" destination="2qK-yV-d2N" id="AVo-Ai-HhP"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="5ji-QT-BNG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aK4-iO-eJk"/>
-                            <constraint firstItem="5ji-QT-BNG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gbY-yf-Qow"/>
+                            <constraint firstItem="5Pw-Nt-TNK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="42V-GU-sg5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sNp-VS-Nid" secondAttribute="trailing" id="5ka-7d-vHs"/>
+                            <constraint firstItem="sNp-VS-Nid" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Gdg-3i-8pR"/>
+                            <constraint firstItem="sNp-VS-Nid" firstAttribute="top" secondItem="5Pw-Nt-TNK" secondAttribute="bottom" id="Kpq-zG-AY4"/>
+                            <constraint firstItem="5Pw-Nt-TNK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fYd-iu-H06"/>
+                            <constraint firstItem="5Pw-Nt-TNK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="155" id="qLI-aC-Y9S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sNp-VS-Nid" secondAttribute="bottom" id="voK-BX-Gtz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Yapılacaklar Listesi" id="hK7-lK-X1f">
@@ -42,6 +78,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="kayitlarTableView" destination="sNp-VS-Nid" id="fDy-7b-hwc"/>
+                        <outlet property="searchBar" destination="5Pw-Nt-TNK" id="Kgn-jp-ckx"/>
                         <segue destination="shl-5Y-sUe" kind="show" identifier="toDetail" id="c5B-ky-TTe"/>
                     </connections>
                 </viewController>
@@ -141,7 +179,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="o4p-8x-wLc" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="ZoK-zm-ocm">
-                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <rect key="frame" x="0.0" y="59" width="393" height="104.33333333333334"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
