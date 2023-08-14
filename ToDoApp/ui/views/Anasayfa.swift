@@ -14,18 +14,21 @@ class Anasayfa: UIViewController {
     @IBOutlet weak var kayitlarTableView: UITableView!
     
     var kayitListesi = [Kayitlar]()
+    var viewModel = AnasayfaViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         searchBar.delegate = self
         kayitlarTableView.dataSource = self
         kayitlarTableView.delegate = self
         
-        let k1 = Kayitlar(kayit_id: 1,kayit_icerik: "su iç")
-        let k2 = Kayitlar(kayit_id: 2,kayit_icerik: "dondurma al")
-        let k3 = Kayitlar(kayit_id: 3,kayit_icerik: "mama sipariş et")
-        kayitListesi.append(k1)
-        kayitListesi.append(k2)
-        kayitListesi.append(k3)
+        _ = viewModel.kayitListesi.subscribe(onNext: {liste in
+            self.kayitListesi = liste
+            self.kayitlarTableView.reloadData()
+        })
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        viewModel.listele()
     }
 
     @IBAction func buttonDetail(_ sender: Any) {
@@ -47,7 +50,7 @@ class Anasayfa: UIViewController {
 
 extension Anasayfa: UISearchBarDelegate{
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        print("Madde Ara: \(searchText)")
+        self.viewModel.ara(searchText: searchText)
     }
 }
 
@@ -80,7 +83,7 @@ extension Anasayfa: UITableViewDelegate,UITableViewDataSource{
             alert.addAction(iptalAction)
             
             let evetAction = UIAlertAction(title: "Evet", style: .destructive){ action in
-                print("Kayıt sil: \(kayit.kayit_icerik!)")
+                self.viewModel.sil(kayit_id: kayit.kayit_id!)
             }
             alert.addAction(evetAction)
             

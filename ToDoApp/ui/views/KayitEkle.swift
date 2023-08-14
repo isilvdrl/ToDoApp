@@ -11,6 +11,8 @@ class KayitEkle: UIViewController {
 
     @IBOutlet weak var tfKayit: UITextField!
     
+    var viewModel = KayitEkleViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,14 +21,10 @@ class KayitEkle: UIViewController {
     
     @IBAction func buttonKaydet(_ sender: Any) {
         if let icerik = tfKayit.text{
-            kaydet(kayit_icerik: icerik)
+            viewModel.kaydet(kayit_icerik: icerik)
             }
         
     }
     
-    func kaydet(kayit_icerik : String){
-        print("Kaydedilen:  \(kayit_icerik)")
-        
-    }
 
 }

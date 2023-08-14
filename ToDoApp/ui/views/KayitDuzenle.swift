@@ -12,6 +12,7 @@ class KayitDuzenle: UIViewController {
     @IBOutlet weak var tfKayit: UITextField!
     
     var kayit: Kayitlar?
+    var viewModel = KayitDuzenleViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,11 +25,9 @@ class KayitDuzenle: UIViewController {
     
     @IBAction func buttonUpdate(_ sender: Any) {
         if let ornIcerik = tfKayit.text , let orn = kayit{
-            guncelle(kayit_id: orn.kayit_id!, kayit_icerik: ornIcerik)
+            viewModel.guncelle(kayit_id: orn.kayit_id!, kayit_icerik: ornIcerik)
         }
         
     }
-    func guncelle(kayit_id:Int,kayit_icerik:String) {
-        print("Güncellendi : \(kayit_id)-\(kayit_icerik)")
-    }
+
 }
