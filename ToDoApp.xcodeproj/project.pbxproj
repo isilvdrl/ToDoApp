@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E84888F72A8B9BE40071A142 /* toDoDb.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = E84888F62A8B9BE40071A142 /* toDoDb.sqlite */; };
 		E889A2EF2A794B1A00D324E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E889A2EE2A794B1A00D324E6 /* AppDelegate.swift */; };
 		E889A2F12A794B1A00D324E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E889A2F02A794B1A00D324E6 /* SceneDelegate.swift */; };
 		E889A2F32A794B1A00D324E6 /* Anasayfa.swift in Sources */ = {isa = PBXBuildFile; fileRef = E889A2F22A794B1A00D324E6 /* Anasayfa.swift */; };
@@ -20,6 +21,11 @@
 		E889A3252A794EE700D324E6 /* KayitDuzenle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E889A3242A794EE700D324E6 /* KayitDuzenle.swift */; };
 		E889A3272A79547300D324E6 /* Kayitlar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E889A3262A79547300D324E6 /* Kayitlar.swift */; };
 		E8ADFFFC2A802EC200A5DACE /* KayitlarHucre.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ADFFFB2A802EC200A5DACE /* KayitlarHucre.swift */; };
+		E8AF1B4B2A8B8ECF004AF28F /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AF1B402A8B8ECE004AF28F /* FMDatabase.m */; };
+		E8AF1B4C2A8B8ECF004AF28F /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AF1B412A8B8ECE004AF28F /* FMResultSet.m */; };
+		E8AF1B4D2A8B8ECF004AF28F /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AF1B432A8B8ECE004AF28F /* FMDatabaseAdditions.m */; };
+		E8AF1B4E2A8B8ECF004AF28F /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AF1B492A8B8ECF004AF28F /* FMDatabaseQueue.m */; };
+		E8AF1B4F2A8B8ECF004AF28F /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AF1B4A2A8B8ECF004AF28F /* FMDatabasePool.m */; };
 		E8D0312F2A86601E00C7E52F /* AnasayfaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D0312E2A86601E00C7E52F /* AnasayfaViewModel.swift */; };
 		E8D031322A86618D00C7E52F /* KayitlarDaoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D031312A86618D00C7E52F /* KayitlarDaoRepository.swift */; };
 		E8D031342A86688200C7E52F /* KayitEkleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D031332A86688200C7E52F /* KayitEkleViewModel.swift */; };
@@ -45,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E84888F62A8B9BE40071A142 /* toDoDb.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = toDoDb.sqlite; sourceTree = "<group>"; };
 		E889A2EB2A794B1A00D324E6 /* ToDoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E889A2EE2A794B1A00D324E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E889A2F02A794B1A00D324E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +69,18 @@
 		E889A3242A794EE700D324E6 /* KayitDuzenle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KayitDuzenle.swift; sourceTree = "<group>"; };
 		E889A3262A79547300D324E6 /* Kayitlar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kayitlar.swift; sourceTree = "<group>"; };
 		E8ADFFFB2A802EC200A5DACE /* KayitlarHucre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KayitlarHucre.swift; sourceTree = "<group>"; };
+		E8AF1B3F2A8B8ECE004AF28F /* ToDoApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToDoApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		E8AF1B402A8B8ECE004AF28F /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		E8AF1B412A8B8ECE004AF28F /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		E8AF1B422A8B8ECE004AF28F /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		E8AF1B432A8B8ECE004AF28F /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		E8AF1B442A8B8ECF004AF28F /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		E8AF1B452A8B8ECF004AF28F /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		E8AF1B462A8B8ECF004AF28F /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		E8AF1B472A8B8ECF004AF28F /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		E8AF1B482A8B8ECF004AF28F /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		E8AF1B492A8B8ECF004AF28F /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		E8AF1B4A2A8B8ECF004AF28F /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
 		E8D0312E2A86601E00C7E52F /* AnasayfaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaViewModel.swift; sourceTree = "<group>"; };
 		E8D031312A86618D00C7E52F /* KayitlarDaoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KayitlarDaoRepository.swift; sourceTree = "<group>"; };
 		E8D031332A86688200C7E52F /* KayitEkleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KayitEkleViewModel.swift; sourceTree = "<group>"; };
@@ -125,6 +144,19 @@
 				E889A2F72A794B1C00D324E6 /* Assets.xcassets */,
 				E889A2F92A794B1C00D324E6 /* LaunchScreen.storyboard */,
 				E889A2FC2A794B1C00D324E6 /* Info.plist */,
+				E84888F62A8B9BE40071A142 /* toDoDb.sqlite */,
+				E8AF1B462A8B8ECF004AF28F /* FMDatabase.h */,
+				E8AF1B402A8B8ECE004AF28F /* FMDatabase.m */,
+				E8AF1B442A8B8ECF004AF28F /* FMDatabaseAdditions.h */,
+				E8AF1B432A8B8ECE004AF28F /* FMDatabaseAdditions.m */,
+				E8AF1B482A8B8ECF004AF28F /* FMDatabasePool.h */,
+				E8AF1B4A2A8B8ECF004AF28F /* FMDatabasePool.m */,
+				E8AF1B452A8B8ECF004AF28F /* FMDatabaseQueue.h */,
+				E8AF1B492A8B8ECF004AF28F /* FMDatabaseQueue.m */,
+				E8AF1B422A8B8ECE004AF28F /* FMDB.h */,
+				E8AF1B472A8B8ECF004AF28F /* FMResultSet.h */,
+				E8AF1B412A8B8ECE004AF28F /* FMResultSet.m */,
+				E8AF1B3F2A8B8ECE004AF28F /* ToDoApp-Bridging-Header.h */,
 			);
 			path = ToDoApp;
 			sourceTree = "<group>";
@@ -280,6 +312,7 @@
 				TargetAttributes = {
 					E889A2EA2A794B1A00D324E6 = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 					};
 					E889A3002A794B1C00D324E6 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -320,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E889A2FB2A794B1C00D324E6 /* LaunchScreen.storyboard in Resources */,
+				E84888F72A8B9BE40071A142 /* toDoDb.sqlite in Resources */,
 				E889A2F82A794B1C00D324E6 /* Assets.xcassets in Resources */,
 				E889A2F62A794B1A00D324E6 /* Main.storyboard in Resources */,
 			);
@@ -349,12 +383,17 @@
 				E8D031342A86688200C7E52F /* KayitEkleViewModel.swift in Sources */,
 				E889A3252A794EE700D324E6 /* KayitDuzenle.swift in Sources */,
 				E889A2F32A794B1A00D324E6 /* Anasayfa.swift in Sources */,
+				E8AF1B4B2A8B8ECF004AF28F /* FMDatabase.m in Sources */,
 				E8D0312F2A86601E00C7E52F /* AnasayfaViewModel.swift in Sources */,
+				E8AF1B4E2A8B8ECF004AF28F /* FMDatabaseQueue.m in Sources */,
+				E8AF1B4D2A8B8ECF004AF28F /* FMDatabaseAdditions.m in Sources */,
 				E889A3272A79547300D324E6 /* Kayitlar.swift in Sources */,
+				E8AF1B4C2A8B8ECF004AF28F /* FMResultSet.m in Sources */,
 				E889A3232A794EAF00D324E6 /* KayitEkle.swift in Sources */,
 				E889A2EF2A794B1A00D324E6 /* AppDelegate.swift in Sources */,
 				E8ADFFFC2A802EC200A5DACE /* KayitlarHucre.swift in Sources */,
 				E8D031322A86618D00C7E52F /* KayitlarDaoRepository.swift in Sources */,
+				E8AF1B4F2A8B8ECF004AF28F /* FMDatabasePool.m in Sources */,
 				E8D031362A86689700C7E52F /* KayitDuzenleViewModel.swift in Sources */,
 				E889A2F12A794B1A00D324E6 /* SceneDelegate.swift in Sources */,
 			);
@@ -531,6 +570,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -548,6 +588,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ios.ToDoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ToDoApp/ToDoApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -558,6 +600,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -575,6 +618,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ios.ToDoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ToDoApp/ToDoApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
